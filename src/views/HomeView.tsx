@@ -139,7 +139,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
           <h2 className="h2">Isi inventaris kosakatamu sebelum bertarung.</h2>
           <p className="lede" style={{ marginTop: 16 }}>
             15 kosakata dasar yang paling sering dipakai sehari-hari, dikemas jadi kartu balik yang
-            bisa kamu hafalkan sendiri — lengkap dengan contoh kalimat dan pelacak progres.
+            bisa kamu hafalkan sendiri, lengkap dengan contoh kalimat dan pelacak progres.
           </p>
 
           <div
@@ -240,12 +240,74 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
           <div className="sdg-strip">
             <span className="sdg-chip">SDG 4 — Pendidikan Berkualitas</span>
             <p style={{ margin: 0, maxWidth: 640 }}>
-              VocaBee dibangun sebagai bentuk gamifikasi pendidikan: menerapkan mekanisme dan pola
-              pikir permainan untuk melibatkan pemain, mendorong pembelajaran, dan membuat proses
-              yang biasanya membosankan menjadi pengalaman yang ingin diulang. Pendekatan ini
-              mendukung akses pembelajaran bahasa yang lebih inklusif dan menyenangkan bagi siswa SMP
-              di seluruh Indonesia.
+              VocaBee itu dibikin kaya game! Jadi, belajar bahasa yang biasanya bikin ngantuk dan malesin, diubah biar seru dan bikin nagih buat dimainin lagi. Lewat VocaBee, semua anak SMP di Indonesia bisa belajar bahasa Inggris dengan cara yang lebih asik dan gak diskriminatif.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WAWANCARA GURU NATIVE SPEAKER */}
+      <section id="riset">
+        <div className="wrap">
+          <p className="eyebrow-line">
+            <span className="dash" />
+            Validasi &amp; Riset Nyata
+          </p>
+          <h2 className="h2">Validasi langsung bersama Guru Native Speaker.</h2>
+          <p className="lede" style={{ marginTop: 16 }}>
+            Bukan sekadar terjemahan mesin atau tebakan kosakata. Tim VocaBee berkonsultasi,
+            berdiskusi, dan menguji relevansi materi gameplay langsung bersama guru penutur asli
+            (Native Speaker) di SMA Santa Angela Bandung agar kosakata yang dipelajari akurat,
+            alami, dan kontekstual.
+          </p>
+
+          <div className="interview-grid">
+            <div className="interview-media">
+              <div className="interview-badge">
+                <span className="dot" aria-hidden="true" />
+                <span>BUKTI RISET LAPANGAN</span>
+              </div>
+              <div className="interview-img-wrap">
+                <img
+                  src="/interview-native-speaker.jpg"
+                  alt="Dokumentasi wawancara tim VocaBee bersama guru native speaker di SMA Santa Angela Bandung"
+                  className="interview-img"
+                  loading="lazy"
+                />
+              </div>
+              <p className="interview-caption">
+                Dokumentasi sesi konsultasi &amp; review materi game VocaBee bersama guru native speaker di lingkungan SMA Santa Angela Bandung.
+              </p>
+            </div>
+
+            <div className="interview-cards">
+              <div className="interview-card">
+                <span className="interview-card-tag">01 · NATURAL ENGLISH</span>
+                <h3>Kosakata Sehari-hari yang Otentik</h3>
+                <p>
+                  Memastikan kata dan frasa yang digunakan dalam game adalah ekspresi wajar yang
+                  benar-benar dipakai penutur asli (native speaker), bukan terjemahan kaku buku teks.
+                </p>
+              </div>
+
+              <div className="interview-card">
+                <span className="interview-card-tag">02 · GAMEPLAY VALIDATION</span>
+                <h3>Tingkat Kesulitan Sesuai Siswa SMP</h3>
+                <p>
+                  Menguji mekanisme pertarungan kosakata agar ramah bagi siswa pemula, namun tetap
+                  menantang dan memicu daya ingat jangka panjang.
+                </p>
+              </div>
+
+              <div className="interview-card">
+                <span className="interview-card-tag">03 · CONTEXT &amp; CONNOTATION</span>
+                <h3>Nuansa Kata &amp; Konteks Penggunaan</h3>
+                <p>
+                  Mendapatkan masukan langsung seputar konotasi kata dan perbedaan konteks makna agar
+                  pemain paham kapan suatu kata tepat digunakan dalam kalimat nyata.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -264,22 +326,22 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
               <div className="avatar photo">
                 <img src={"https://i.ibb.co.com/QFQ6pk7B/kent-member.jpg"} alt="Potret Kent" />
               </div>
-              <h3>Kent</h3>
-              <span className="role">Ketua Tim</span>
+              <h3>JONATHAN KENT SUHERTAN</h3>
+              <span className="role">Ketua Tim - SMA Santa Angela Bandung</span>
             </div>
             <div className="member">
               <div className="avatar photo">
                 <img src={"https://i.ibb.co.com/bgk1WBc7/lionel.jpg"} alt="Potret Lionel" />
               </div>
-              <h3>Lionel</h3>
-              <span className="role">Anggota Tim</span>
+              <h3>LIONEL ISAAC MAHARDIKA SITOMPUL</h3>
+              <span className="role">Game Developer - SMA Santa Angela Bandung</span>
             </div>
             <div className="member">
               <div className="avatar photo">
                 <img src={"https://i.ibb.co.com/cXQzQsxb/josh.jpg"} alt="Potret Joshua" />
               </div>
-              <h3>Joshua</h3>
-              <span className="role">Anggota Tim</span>
+              <h3>JOSHUA KALANDRA SIMBOLON</h3>
+              <span className="role">UI/X Designer - SMA Santa Angela Bandung</span>
             </div>
           </div>
         </div>

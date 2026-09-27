@@ -171,9 +171,6 @@ export default function FaqView() {
             </div>
           </div>
         </div>
-        <div className="wrap">
-          <img src="https://i.ibb.co.com/JwdyKQnf/01-woody.png" alt="woody" />
-        </div>
       </section>
     </div>
   );

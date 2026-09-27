@@ -71,7 +71,7 @@ export const faqItems = [
   {
     question: 'VocaBee cocok untuk usia berapa?',
     answer:
-      'Dirancang terutama untuk pelajar SMP, tapi siapa pun yang ingin melatih kosakata dan tata bahasa dasar bahasa Inggris juga bisa memainkannya.',
+      'Dirancang untuk pelajar SMP, tapi siapa pun yang ingin melatih kosakata dan tata bahasa dasar bahasa Inggris juga bisa memainkannya.',
   },
   {
     question: 'Bagaimana cara mulai bermain?',
