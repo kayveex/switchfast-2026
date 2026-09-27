@@ -16,6 +16,22 @@ Proyek ini mengusung prinsip gamifikasi edukasi yang inklusif: mengubah materi p
 
 ---
 
+## 🔄 Riwayat Repositori & Alasan Konversi ke React 19
+
+- **Repository Asli (Sebelum Konversi)**: [https://github.com/glitch1717/Vocabee.git](https://github.com/glitch1717/Vocabee.git)
+
+### Alasan Konversi ke React 19:
+Pada versi awal yang berbasis web statis biasa, game hasil ekspor **Godot 4** mengalami kendala teknis signifikan saat dijalankan langsung di lingkungan peramban (*browser*):
+
+1. **Mengatasi Pembatasan Keamanan Browser (*CORS & Same-Origin Policy*)**:
+   Ekspor web Godot 4 mengandalkan kompilasi biner **WebAssembly (`.wasm`)** dan paket data **(`.pck`)**. Ketika aplikasi dibuka langsung dari penyimpanan lokal (protokol `file:///`), browser modern (Chrome, Edge, Firefox) memblokir panggilan `fetch()` biner karena aturan Same-Origin Policy. Di repositori lama, pengguna terpaksa harus menjalankan skrip batch manual (`buka_game.bat` atau web server Python mandiri) yang merepotkan dan tidak praktis.
+2. **Penyajian Game Terpadu Tanpa Konfigurasi Tambahan (*Zero Configuration*)**:
+   Dengan mengonversi proyek ke arsitektur **React 19 + Vite**, seluruh bundel game Godot ditempatkan ke dalam direktori publik terpadu (`public/Wordventure_demo/`). Server web lokal Vite (saat *development*) maupun server web statis (saat *production/build*) otomatis menyajikan file game melalui protokol HTTP/HTTPS lengkap dengan MIME type `application/wasm` yang valid. Hasilnya, game Godot dapat dimainkan secara instan langsung lewat tautan tag `<a>` di website utama tanpa perlu membuka file `.bat` lagi.
+3. **Pemisahan Peran & Performa Tinggi (*Hybrid Architecture*)**:
+   React 19 memberikan kemampuan *single-page application* (SPA) modern yang sangat cepat untuk menangani antarmuka edukasi (Modul Belajar, Flashcard interaktif, FAQ, sistem Dark Mode, dan form masukan), sementara engine Godot 4 menangani komputasi visual dan logika pertarungan RPG secara terisolasi dan efisien di dalam kanvas WebAssembly.
+
+---
+
 ## 👥 Tim Pengembang & Struktur Tim
 
 Aplikasi ini dirancang dan dikembangkan dengan bangga oleh siswa **SMA Santa Angela Bandung**:
